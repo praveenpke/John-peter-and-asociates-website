@@ -94,8 +94,6 @@ ul {
 
 /* about me */
 .about {
-  -webkit-clip-path: circle(76.9% at 47% 21%);
-  clip-path: circle(76.9% at 47% 21%);
   background-color: rgb(255, 247, 240);
   display: grid;
   height: 100vh;
@@ -126,7 +124,10 @@ ul {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 800px) {
+@media (max-width: 600px) {
+  .about {
+    grid-template-rows: 60% 40%;
+  }
 }
 
 /* services */
@@ -176,6 +177,7 @@ ul {
   padding-bottom: 1rem;
 }
 .contact-text {
+  padding: 3rem;
   text-align: left;
 
   margin: auto;
