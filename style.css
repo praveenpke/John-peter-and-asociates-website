@@ -71,7 +71,9 @@ ul {
   font-size: 5rem;
   margin: auto;
 }
-
+.subheading {
+  font-size: 2rem;
+}
 @media (min-width: 800px) {
   .landing {
     display: grid;
